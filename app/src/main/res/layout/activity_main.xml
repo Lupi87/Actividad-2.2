@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_activity_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/title"
+        android:layout_marginHorizontal="25dp"
+        android:textSize="35sp"
+        android:textColorHint="@color/title"
+        android:textStyle="bold">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/btn_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/main_activity_title">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/btn1"
+        app:icon="@drawable/ic_baseline_camera_alt_24"
+        app:iconGravity="end"
+        app:iconTint="@color/black"
+        app:cornerRadius="5dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/btn2"
+        app:cornerRadius="5dp"
+        app:icon="@drawable/ic_baseline_favorite_24"
+        app:iconTint="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintEnd_toStartOf="@+id/btn3"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/btn3"
+        app:cornerRadius="5dp"
+        app:icon="@drawable/ic_baseline_landscape_24"
+        app:iconTint="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintEnd_toStartOf="@+id/btn4"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/btn4"
+        app:icon="@drawable/ic_baseline_face_24"
+        app:iconTint="@color/black"
+        android:layout_marginEnd="25dp"
+        app:cornerRadius="5dp"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/box_image1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_box">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                app:srcCompat="@drawable/image_container1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text1"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image1"
+                android:layout_marginHorizontal="10dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text2"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text1"
+                android:textSize="23sp"
+                android:layout_marginHorizontal="10dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginBottom="25dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/box_image1"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                app:srcCompat="@drawable/image_container2"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text3"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image2"
+                android:layout_marginHorizontal="10dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text4"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text3"
+                android:textSize="23sp"
+                android:layout_marginHorizontal="10dp">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

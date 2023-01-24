@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Home</string>
+    <string name="title">Upcoming meetups</string>
+    <string name="text1">USA, Los Angeles - 2 Weeks</string>
+    <string name="text2">City of Los Angeles</string>
+    <string name="text3">Madives - 3 weeks</string>
+    <string name="text4">Beach vacation</string>
+</resources>
